@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="#e9cf2b"
+    android:padding="20dp"
+    >
+
+
+
+
+    <ImageView
+        android:id="@+id/day_row_thumbnail"
+        android:src="@drawable/calendar1600"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:padding="5dp"
+        android:layout_alignParentLeft="true"
+
+        />
+    <TextView
+        android:id="@+id/day_row_dateString"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="04/29/30"
+        android:layout_toRightOf="@+id/day_row_thumbnail"
+        android:textColor="#FF000000"
+        android:textSize="20sp"
+        android:layout_marginBottom="5dp"
+
+        />
+    <TextView
+        android:id="@+id/day_row_numItems"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="21 Items"
+        android:textSize="15sp"
+        android:layout_below="@+id/day_row_dateString"
+        android:layout_toRightOf="@+id/day_row_thumbnail"
+        android:textColor="#FF000000"
+
+        />
+
+
+
+</RelativeLayout>

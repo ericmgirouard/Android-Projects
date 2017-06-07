@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="https://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="app.weatherapp.com.weatherapp.MainActivity"
+
+    >
+
+    <item
+        android:id="@+id/menu_changeCity"
+        android:title="Change City"
+        android:orderInCategory="100"
+        app:showAsAction="always"
+        ></item>
+</menu>

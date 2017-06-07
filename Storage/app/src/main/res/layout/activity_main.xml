@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="app.storage.com.storage.MainActivity"
+    android:background="#a71119">
+
+<TextView
+    android:id="@+id/Title"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="My Wish List"
+    android:textStyle="italic"
+    android:layout_centerHorizontal="true"
+    android:textSize="30sp"
+    android:layout_marginTop="20dp"
+    />
+
+    <EditText
+        android:id="@+id/WishTitle"
+        android:layout_width="320dp"
+        android:layout_centerHorizontal="true"
+        android:background="#fff"
+        android:layout_height="30dp"
+        android:layout_below="@+id/Title"
+        android:layout_marginTop="20dp"
+        android:hint="Enter Title..."
+
+        />
+
+    <EditText
+        android:id="@+id/enter"
+        android:background="#fff"
+        android:hint="Enter wish here..."
+        android:padding="10dp"
+        android:textColor="#c3627666"
+        android:layout_width="320dp"
+        android:layout_height="150dp"
+        android:gravity="start"
+        android:textAlignment="textStart"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp"
+        android:layout_below="@+id/WishTitle"
+        />
+
+
+<LinearLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_below="@+id/enter"
+    android:layout_marginTop="20sp"
+    android:layout_centerHorizontal="true">
+
+
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Delete Wishes"
+        android:layout_marginTop="20dp"
+        android:id="@+id/deleteMain"
+        android:padding="5dp"
+        android:layout_margin="3dp"
+        android:background="#535489" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Submit"
+        android:layout_marginTop="20dp"
+        android:id="@+id/Save"
+        android:padding="5dp"
+        android:layout_margin="3dp"
+        android:background="#535489"
+        />
+
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/ViewWishesButton"
+        android:text="View Wishes"
+        android:layout_marginTop="20dp"
+        android:padding="5dp"
+        android:layout_margin="3dp"
+        android:background="#535489"
+
+        />
+
+</LinearLayout>
+
+
+
+
+</RelativeLayout>

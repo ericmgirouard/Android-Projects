@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">CalorieCounter</string>
+    <string name="ItemName">What did you eat?</string>
+    <string name="ItemCals">How many calories were in it?</string>
+</resources>

@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="app.caloriecounter.com.caloriecounter.display_items">
+
+
+        <LinearLayout
+            android:id="@+id/Activity_display_items_Linear"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:orientation="vertical"
+
+
+            >
+            <!--This Linear Layout belong to the Header of the View -->
+            <LinearLayout
+                android:id="@+id/Activity_display_items_Linear_header"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:background="#b91111"
+                android:gravity="center"
+                >
+
+                <TextView
+                    android:id="@+id/Activity_display_items_Header_txt1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Number of Items:"
+                    android:gravity="center"
+                    android:padding="5dp"
+                    android:textColor="#FFFF"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="|"
+                    android:textColor="#FFFF"
+                    />
+
+                <TextView
+                    android:id="@+id/Activity_display_items_Header_numDays"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#FFFFFF"
+                    android:text="62"
+                    android:padding="5dp"
+                    android:textStyle="italic"
+                    />
+            </LinearLayout>
+
+
+            <ListView
+                android:id="@+id/Activity_display_items_ListView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:divider="#FF000000"
+                android:dividerHeight="2dp">
+
+            </ListView>
+
+        </LinearLayout>
+
+</RelativeLayout>

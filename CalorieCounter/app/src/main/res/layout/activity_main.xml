@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="app.caloriecounter.com.caloriecounter.MainActivity"
+    android:background="#799c4b"
+
+
+    >
+
+    <TextView
+        android:id="@+id/MainActivity_Title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="@string/app_name"
+        android:layout_marginTop="35dp"
+        android:textSize="25sp"
+        android:textStyle="bold"
+
+
+
+        />
+
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/MainActivity_Title"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/apple" />
+
+    <LinearLayout
+        android:id="@+id/MainActivity_Linear"
+        android:layout_width="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:gravity="center_horizontal"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/logo"
+        android:orientation="vertical"
+        android:background="@drawable/row_bg">
+
+        <EditText
+            android:id="@+id/MainActivity_ItemName"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:padding="14dp"
+            android:hint="@string/ItemName" />
+
+        <EditText
+            android:id="@+id/MainActivity_ItemCalories"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:padding="14dp"
+            android:hint="@string/ItemCals" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/MainActivity_Submit"
+            android:text="Submit"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:padding="5dp"
+            android:textColor="#fdfdfe"
+            android:background="#d41606"/>
+
+
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/MainActivity_ViewEntries"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="View Entries"
+        android:background="#d41606"
+        android:textSize="10sp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/MainActivity_Linear"
+        android:padding="5dp"
+        android:textColor="#fdfdfe"
+        />
+
+
+</RelativeLayout>

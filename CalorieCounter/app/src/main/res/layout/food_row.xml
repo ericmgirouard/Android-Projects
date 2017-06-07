@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="12dp"
+    android:background="@drawable/row_bg"
+
+    >
+
+
+    <TextView
+        android:id="@+id/food_row_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="6dp"
+        android:text="FoodName"
+        android:textColor="#000"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/food_row_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/food_row_name"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:text="May 1 2017"
+        android:textSize="15sp" />
+
+    <ImageView
+        android:id="@+id/food_row_apple"
+        android:layout_width="90dp"
+        android:layout_height="90dp"
+        android:layout_marginTop="5dp"
+        android:layout_below="@+id/food_row_date"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/apple" />
+
+    <TextView
+        android:id="@+id/food_row_calories"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/food_row_apple"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="5dp"
+        android:text="345"
+        android:textColor="#cf0c10"
+        android:textSize="35sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/food_row_calories"
+        android:layout_toRightOf="@+id/food_row_calories"
+        android:text="Cal."
+        android:textSize="15sp"
+        android:textStyle="bold"
+
+        />
+
+    <TextView
+        android:id="@+id/food_row_arrow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:text=">"
+        android:padding="5dp"
+        android:textSize="35sp" />
+
+
+</RelativeLayout>
